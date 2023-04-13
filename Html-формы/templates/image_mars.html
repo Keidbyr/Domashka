@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Привет, Марс!</title>
-</head>
+{% extends "base.html" %}
+
+{% block content %}
 <body>
     <h1>Жди нас, Марс!</h1>
     <p> <img src="{{url_for('static', filename='photos/image1.jpg')}}"></p>
     <p>Вот, она какая, красная планета</p>
 </body>
-</html>
+
+{% endblock %}
